@@ -1,0 +1,37 @@
+titlesite {
+    color: rgb(0, 255, 106);
+    font-size: 60px;
+    justify-content: center;
+    display: flex;
+    font-family: "Arial", sans-serif;
+}
+
+p {
+    color: rgb(0, 255, 106);
+    font-size: 30px;
+    justify-content: left;
+    display: flex;
+    font-family: "Arial", sans-serif;
+}
+
+ptitle {
+    color: rgb(0, 255, 106);
+    font-size: 40px;
+    justify-content: left;
+    display: flex;
+    font-family: "Arial", sans-serif;
+}
+
+a {
+    color: rgb(0, 255, 106);
+    font-size: 30px;
+}
+
+a:hover {
+    color: rgb(123, 255, 0);
+    font-size: 30px;
+}
+
+body {
+    background-color: lch(0.63% 0.93 173.7);
+}
