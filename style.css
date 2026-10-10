@@ -9,22 +9,39 @@ titlesite {
 p {
     color: rgb(0, 255, 106);
     font-size: 30px;
-    justify-content: left;
+    justify-content: center;
+    display: flex;
+    font-family: "Arial", sans-serif;
+    line-height: 0.5;
+}
+
+.title {
+    line-height: 1.5;
+    color: rgb(0, 255, 106);
+    font-size: 40px;
+    justify-content: center;
     display: flex;
     font-family: "Arial", sans-serif;
 }
 
-ptitle {
+.maintitle {
+    line-height: 1.5;
     color: rgb(0, 255, 106);
-    font-size: 40px;
-    justify-content: left;
+    font-size: 60px;
+    justify-content: center;
     display: flex;
     font-family: "Arial", sans-serif;
+}
+
+.link-wrapper {
+    text-align: center;
+    line-height: 1.5;
 }
 
 a {
     color: rgb(0, 255, 106);
     font-size: 30px;
+    line-height: 1;
 }
 
 a:hover {
@@ -33,5 +50,8 @@ a:hover {
 }
 
 body {
-    background-color: lch(0.63% 0.93 173.7);
+    background-image: url('img/background.jpg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
 }
