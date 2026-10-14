@@ -1,36 +1,43 @@
-titlesite {
-    color: rgb(0, 255, 106);
-    font-size: 60px;
+.title {
+    line-height: 1.5;
+    color: #ffffff;
+    font-size: 40px;
     justify-content: center;
     display: flex;
     font-family: "Arial", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-p {
-    color: rgb(0, 255, 106);
+.center-container {
+    color: #ffffff;
     font-size: 30px;
     justify-content: center;
     display: flex;
     font-family: "Arial", sans-serif;
     line-height: 0.5;
-}
-
-.title {
-    line-height: 1.5;
-    color: rgb(0, 255, 106);
-    font-size: 40px;
-    justify-content: center;
-    display: flex;
-    font-family: "Arial", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .maintitle {
     line-height: 1.5;
-    color: rgb(0, 255, 106);
+    color: #ffffff;
     font-size: 60px;
     justify-content: center;
     display: flex;
     font-family: "Arial", sans-serif;
+    background: linear-gradient(
+        to right, 
+        #ff0000, 
+        #fffb00,  
+        #3cff00,  
+        #0026ff,  
+        #ff0000
+    );
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200% auto;
+    animation: shine 5s linear infinite;
 }
 
 .link-wrapper {
@@ -39,19 +46,62 @@ p {
 }
 
 a {
-    color: rgb(0, 255, 106);
+    font-family: "Arial", sans-serif;
+    color: #ffffff;
     font-size: 30px;
     line-height: 1;
 }
 
 a:hover {
-    color: rgb(123, 255, 0);
+    font-family: "Arial", sans-serif;
+    color: #ffffff;
     font-size: 30px;
+    background: linear-gradient(
+        to right, 
+        #ff0000, 
+        #fffb00,  
+        #3cff00,  
+        #0026ff,  
+        #ff0000
+    );
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200% auto;
+    animation: shine 5s linear infinite;
 }
 
 body {
     background-image: url('img/background.jpg');
-    background-repeat: repeat;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.window {
+    width: 97%; 
+    height: 90vh;
+    margin: 5vh auto;
+    border-radius: 8px;
+    overflow: hidden;
+    background: linear-gradient(
+        to top, 
+        rgba(54, 167, 123, 0.25), 
+        rgba(140, 242, 255, 0.25)
+    );
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 3px solid rgba(16, 155, 155, 0.61);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 
+                inset 0 1px 0 rgba(0, 19, 32, 0.6);
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
 }
